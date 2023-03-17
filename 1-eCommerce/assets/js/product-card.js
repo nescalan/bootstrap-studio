@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   alert("Conectado");
   // DOM: Product Card Manipulation
-  let domProductCard = document.getElementById("product-card");
+  let domProductCard = document.getElementById("product-card").innerHTML;
+  console.log(domProductCard);
   const productCard = `
     <div
     class="card"
@@ -251,5 +252,30 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   </div>
     `;
-  domProductCard.appendChild(productCard);
+  const itemCard = `
+    <div class="card">
+    <div class="image"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+          dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+
+        <a href="#" class="action">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+    `;
+  console.log(itemCard);
+  domProductCard.innerHTML = `<h1>Hola</h1>`;
 });
