@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  alert("Conectado");
   // DOM: Product Card Manipulation
   let domProductCard = document.getElementById("product-card");
   const productCard = `
