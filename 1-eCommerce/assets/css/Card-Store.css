@@ -6,3 +6,8 @@ img {
   border-radius: 5px;
 }
 
+#sec-products {
+  height: 10vh;
+  background-color: #f5f5f5;
+  border: 1px solid red;
+}

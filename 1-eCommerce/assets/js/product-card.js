@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  alert("Conectado");
   // DOM: Product Card Manipulation
   let domProductCard = document.getElementById("product-card").innerHTML;
   console.log(domProductCard);
@@ -278,4 +277,31 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   console.log(itemCard);
   domProductCard.innerHTML = `<h1>Hola</h1>`;
+
+  // DOM: Capturamos id = campo
+  let d = document.getElementById("campo");
+
+  // CREAR:  Elemento input
+  var t = document.createElement("INPUT");
+
+  t.setAttribute("type", "text");
+  t.setAttribute("value", "");
+  t.setAttribute("id", "micampodetexto");
+  t.setAttribute("placeholder", "Ingrese un Texto");
+  d.appendChild(t);
+
+  // DOM: Capturamos id = nuevo-input
+  let newInput = document.getElementById("nuevo-input");
+
+  // CREAR: Elemento input
+  let ni = `
+  <input
+  type="text"
+  value=""
+  name=""
+  id="input-de-texto"
+  placeholder="Ingresar un buen texto"
+  />
+  `;
+  newInput.innerHTML = ni;
 });

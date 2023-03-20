@@ -35,11 +35,13 @@
         style="max-width: 1400px; border-bottom: 1px solid var(--bs-gray-200)"
       >
         <div class="container-fluid">
-          <a class="navbar-brand fs-3 fw-bold" href="#"
-            ><img
+          <a class="navbar-brand fs-3 fw-bold" href="#">
+            <img
               class="nav-img"
-              src="https://cdn11.bigcommerce.com/s-ph0s11yw4g/images/stencil/250x63/cariloha-logo-gray_1659045870__97415.original.png" /></a
-          ><button
+              src="https://cdn11.bigcommerce.com/s-ph0s11yw4g/images/stencil/250x63/cariloha-logo-gray_1659045870__97415.original.png"
+              s
+          /></a>
+          <button
             data-bs-toggle="collapse"
             class="navbar-toggler"
             data-bs-target="#navcol-1"
@@ -84,6 +86,7 @@
           height: 700px;
           background: url('./assets/img/90f24996-99fe-4276-aee7-35f29e8eb28b-cover.png'),
             url('https://cdn.bootstrapstudio.io/placeholders/1400x800.png');
+          background-repeat: no-repeat;
         "
       >
         <div class="container h-100">
@@ -285,11 +288,18 @@
     <section id="sec-products">
       <div class="container">
         <!-- Start: Card Store -->
-        <span id="product-card"></span>
+        <span id="product-card">Here it is</span>
+
+        <div id="campo">campo</div>
+        <div id="boton">boton</div>
+        <div id="imagen">imagen</div>
+
+        <span id="nuevo-input">nuevo input</span>
 
         <!-- End: Card Store -->
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="./assets/js/product-card.js"></script>
